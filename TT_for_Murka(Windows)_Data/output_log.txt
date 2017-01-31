@@ -1,0 +1,118 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 740M    (ID=0xfdf)
+    Vendor:   NVIDIA
+    VRAM:     1988 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Антон\Документы\techTask\TT_for_Murka(Windows)_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Антон\Документы\techTask\TT_for_Murka(Windows)_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Антон\Документы\techTask\TT_for_Murka(Windows)_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Антон\Документы\techTask\TT_for_Murka(Windows)_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Антон\Документы\techTask\TT_for_Murka(Windows)_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Антон\Документы\techTask\TT_for_Murka(Windows)_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.080 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Антон\Документы\techTask\TT_for_Murka(Windows)_Data\Managed\System.Core.dll (this message is harmless)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.376319 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 169.
+Total: 0.190440 ms (FindLiveObjects: 0.018245 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.150527 ms  DeleteObjects: 0.005701 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at straight.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.388863 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 197.
+Total: 0.224651 ms (FindLiveObjects: 0.043903 ms CreateObjectMapping: 0.013114 ms MarkObjects: 0.155659 ms  DeleteObjects: 0.010263 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at wedge.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.407109 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 209.
+Total: 0.237765 ms (FindLiveObjects: 0.033640 ms CreateObjectMapping: 0.014254 ms MarkObjects: 0.176756 ms  DeleteObjects: 0.011403 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.448732 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 210.
+Total: 0.275967 ms (FindLiveObjects: 0.046754 ms CreateObjectMapping: 0.013684 ms MarkObjects: 0.202984 ms  DeleteObjects: 0.011403 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.429346 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 209.
+Total: 0.248028 ms (FindLiveObjects: 0.021666 ms CreateObjectMapping: 0.014824 ms MarkObjects: 0.199563 ms  DeleteObjects: 0.010833 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.394565 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 170.
+Total: 0.290222 ms (FindLiveObjects: 0.036491 ms CreateObjectMapping: 0.014254 ms MarkObjects: 0.204124 ms  DeleteObjects: 0.033640 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.370617 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 197.
+Total: 0.266844 ms (FindLiveObjects: 0.031359 ms CreateObjectMapping: 0.014824 ms MarkObjects: 0.206975 ms  DeleteObjects: 0.011973 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.363775 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 209.
+Total: 0.287941 ms (FindLiveObjects: 0.033640 ms CreateObjectMapping: 0.014824 ms MarkObjects: 0.225221 ms  DeleteObjects: 0.011403 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.379740 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 210.
+Total: 0.279958 ms (FindLiveObjects: 0.021096 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.229782 ms  DeleteObjects: 0.013114 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.427635 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 209.
+Total: 0.305046 ms (FindLiveObjects: 0.022237 ms CreateObjectMapping: 0.015965 ms MarkObjects: 0.250879 ms  DeleteObjects: 0.014824 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.360354 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 170.
+Total: 0.317590 ms (FindLiveObjects: 0.024517 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.241186 ms  DeleteObjects: 0.035351 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.348950 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 197.
+Total: 0.295353 ms (FindLiveObjects: 0.018245 ms CreateObjectMapping: 0.014824 ms MarkObjects: 0.248598 ms  DeleteObjects: 0.013114 ms)
+
