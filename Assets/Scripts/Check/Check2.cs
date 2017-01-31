@@ -36,8 +36,8 @@ public class Check2 : MonoBehaviour {
         for (int i = 0; i < Circe.segments + 1; i++)
         {
 
-            x = (0.006f) * i + Line.Instance.cx;
-            y = (0.006f) * i + Line.Instance.cy;
+            x = (0.006f) * i + Line.Instance.center_x;
+            y = (0.006f) * i + Line.Instance.center_y;
 
             points1[i] = new Vector3(x, y, z);
 

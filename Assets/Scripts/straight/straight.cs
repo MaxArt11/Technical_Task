@@ -15,7 +15,6 @@ public class straight : MonoBehaviour {
         if (triangleCompare.Instance.winner)
         {
             Timer.Instance.secondsTimer = 5;
-            Score.Instance.score++;
         }
     }
 
@@ -26,9 +25,9 @@ public class straight : MonoBehaviour {
 
 	void Update () {
 
-        del = Line.Instance.ex;
-        dyy = Line.Instance.ey;
-        Camera.main.transform.position = new Vector3(Line.Instance.cx, Line.Instance.cy, -10.0f);
+        del = Line.Instance.extents_x;
+        dyy = Line.Instance.extents_y;
+        Camera.main.transform.position = new Vector3(Line.Instance.center_x, Line.Instance.center_y, -10.0f);
 
         if (Line.Instance.count == 0)
         {

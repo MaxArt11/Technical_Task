@@ -5,6 +5,6 @@ public class task : MonoBehaviour {
 
 
 	void Update () {
-        gameObject.transform.position = new Vector3(Line.Instance.cx, 2.15f + Line.Instance.cy, 0.0f);
+        gameObject.transform.position = new Vector3(Line.Instance.center_x, 2.15f + Line.Instance.center_y, 0.0f);
 	}
 }

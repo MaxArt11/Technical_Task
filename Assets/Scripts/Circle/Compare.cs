@@ -14,11 +14,13 @@ public class Compare : MonoBehaviour {
         GUI.Label(new Rect(345, 3, 100, 100), "Draw this shape:");
 	}
 
+    //calculates the distance between two points
 	public float lenght (Vector3 pointA, Vector3 pointB) {
 		float length = Mathf.Sqrt ((pointB.x - pointA.x)*(pointB.x - pointA.x) + (pointB.y - pointA.y)*(pointB.y - pointA.y));
 		return length;
 	}
 
+    //returns the index of list's element, which is intersect by the "check" line
 	int pointCollisionInizializate(List<Vector3> list1, List<Vector3> list2) {
 
 		int array = 0;
@@ -33,6 +35,7 @@ public class Compare : MonoBehaviour {
 		return array;
 	}
 
+    //returns true if two points is close enough
 	public bool checkPoints(Vector3 pointA, Vector3 pointB) {
 		if ((Mathf.Abs (pointA.x - pointB.x) < 0.2f) && (Mathf.Abs (pointA.y - pointB.y) < 0.2f)) {
 			return true;
@@ -69,7 +72,7 @@ public class Compare : MonoBehaviour {
 
 			delta = new float[8];
 
-			Camera.main.transform.position = new Vector3 (Line.Instance.cx, Line.Instance.cy, -10.0f);
+			Camera.main.transform.position = new Vector3 (Line.Instance.center_x, Line.Instance.center_y, -10.0f);
 			Circe.Instance.Draw ();
             Check1.Instance.Check();
             Check2.Instance.Check();
@@ -86,9 +89,9 @@ public class Compare : MonoBehaviour {
 
 			sum = delta [0] + delta [1] + delta [2] + delta [3] + delta [4] + delta [5] + delta [6] + delta [7];
 
-            if ((delta[0] <= 0.3f) && (delta[1] <= 0.3f) && (delta[2] <= 0.3f) && (delta[3] <= 0.3f) && (delta[4] <= 0.3f) && (delta[5] <= 0.3f) && (delta[6] <= 0.3f) && (delta[7] <= 0.3f) && (sum <= 2f) && (Line.Instance.ex > 0.5f))
-            {
-                Score.Instance.score++;
+            //condition of accepting a new level
+            if ((delta[0] <= 0.3f) && (delta[1] <= 0.3f) && (delta[2] <= 0.3f) && (delta[3] <= 0.3f) && (delta[4] <= 0.3f) && (delta[5] <= 0.3f) && (delta[6] <= 0.3f) && (delta[7] <= 0.3f) && (sum <= 2f) && (Line.Instance.extents_x > 0.5f))
+           {
                 Application.LoadLevel ("Level5");
 			} 
 		}

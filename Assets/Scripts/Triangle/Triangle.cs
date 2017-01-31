@@ -36,9 +36,9 @@ public class Triangle : MonoBehaviour {
 
         ModelPointList = new List<Vector3>();
 
-        float scale = Line.Instance.ex;
-        float line_x = Line.Instance.cx;
-        float line_y = Line.Instance.cy;
+        float scale = Line.Instance.extents_x;
+        float line_x = Line.Instance.center_x;
+        float line_y = Line.Instance.center_y;
 
         for (int i = 0; i < (pointCount / 3); i++)
         {

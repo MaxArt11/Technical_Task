@@ -17,12 +17,14 @@ public class wedgeCompare : MonoBehaviour
         GUI.Label(new Rect(345, 3, 100, 100), "Draw this shape:");
     }
 
+    //calculates the distance between two points
     public float lenght(Vector3 pointA, Vector3 pointB)
     {
         float length = Mathf.Sqrt((pointB.x - pointA.x) * (pointB.x - pointA.x) + (pointB.y - pointA.y) * (pointB.y - pointA.y));
         return length;
     }
 
+    //returns the index of list's element, which is intersect by the "check" line
     int pointCollisionInizializate(List<Vector3> list1, List<Vector3> list2)
     {
         int array = 0;
@@ -40,6 +42,7 @@ public class wedgeCompare : MonoBehaviour
         return array;
     }
 
+    //returns true if two points is close enough
     public bool checkPoints(Vector3 pointA, Vector3 pointB)
     {
         if ((Mathf.Abs(pointA.x - pointB.x) < 0.2f) && (Mathf.Abs(pointA.y - pointB.y) < 0.2f))
@@ -75,7 +78,7 @@ public class wedgeCompare : MonoBehaviour
 
             delta = new float[5];
 
-            Camera.main.transform.position = new Vector3(Line.Instance.cx, Line.Instance.cy, -10.0f);
+            Camera.main.transform.position = new Vector3(Line.Instance.center_x, Line.Instance.center_y, -10.0f);
             wedge.Instance.Draw();
             Check1.Instance.Check();
             Check2.Instance.Check();
@@ -90,9 +93,9 @@ public class wedgeCompare : MonoBehaviour
 
             sum = delta[0] + delta[1] + delta[2] + delta[3] + delta[4];
 
-            if ((delta[0] <= 0.6f) && (delta[1] <= 0.6f) && (delta[2] <= 0.6f) && (delta[3] <= 0.6f) && (delta[4] <= 0.6f) && (sum <= 3.2f) && (Line.Instance.ex > 0.4f))
+            //condition of accepting a new level
+            if ((delta[0] <= 0.6f) && (delta[1] <= 0.6f) && (delta[2] <= 0.6f) && (delta[3] <= 0.6f) && (delta[4] <= 0.6f) && (sum <= 3.2f) && (Line.Instance.extents_x > 0.4f))
             {
-                Score.Instance.score++;
                 Application.LoadLevel("Level3");
             }
         }

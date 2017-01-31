@@ -11,8 +11,8 @@ public class Line : MonoBehaviour {
     private Vector3 mousePos;
 	public int pointsCount = 0;
 	public static Line Instance;
-	public float cx, ex, max, mix;
-	public float cy, ey, may, miy;
+	public float center_x, extents_x, max, mix;
+	public float center_y, extents_y, may, miy;
 	public int count;
 
     void Start()
@@ -44,14 +44,10 @@ public class Line : MonoBehaviour {
         {
             isMousePressed = false;
 			pointsCount = pointsList.Count;
-			cx = line.bounds.center.x;
-			cy = line.bounds.center.y;
-			ex = line.bounds.extents.x;
-			ey = line.bounds.extents.y;
-            max = line.bounds.max.x;
-            mix = line.bounds.min.x;
-            may = line.bounds.max.y;
-            miy = line.bounds.min.y;
+			center_x = line.bounds.center.x;
+			center_y = line.bounds.center.y;
+			extents_x = line.bounds.extents.x;
+			extents_y = line.bounds.extents.y;
 			count = 0;
         }
         if (isMousePressed)

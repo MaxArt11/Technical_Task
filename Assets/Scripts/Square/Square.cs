@@ -10,7 +10,6 @@ public class Square : MonoBehaviour {
     public static Square Instance;
 
 	void Start () {
-        Score.Instance.score++;
         Instance = this;
 	}
 
@@ -36,12 +35,12 @@ public class Square : MonoBehaviour {
 
         ModelPointList = new List<Vector3>();
 
-        float scale = Line.Instance.ex;
+        float scale = Line.Instance.extents_x;
 
         for (int i = 0; i < (pointsCount / 4); i++)
         {
-            x = Line.Instance.cx + scale;
-            y = Line.Instance.cy + ((scale * 8) / pointsCount ) * i - scale;
+            x = Line.Instance.center_x + scale;
+            y = Line.Instance.center_y + ((scale * 8) / pointsCount ) * i - scale;
 
             squareRight[i] = new Vector3(x, y, z);
 
@@ -52,8 +51,8 @@ public class Square : MonoBehaviour {
 
         for (int i = 0; i < (pointsCount / 4); i++)
         {
-            x = Line.Instance.cx - ((scale * 8) / pointsCount) * i + scale;
-            y = Line.Instance.cy + scale;
+            x = Line.Instance.center_x - ((scale * 8) / pointsCount) * i + scale;
+            y = Line.Instance.center_y + scale;
 
             squareTop[i] = new Vector3(x, y, z);
 
@@ -64,8 +63,8 @@ public class Square : MonoBehaviour {
 
         for (int i = 0; i < (pointsCount / 4); i++)
         {
-            x = Line.Instance.cx - scale;
-            y = Line.Instance.cy + scale - ((scale * 8) / pointsCount) * i;
+            x = Line.Instance.center_x - scale;
+            y = Line.Instance.center_y + scale - ((scale * 8) / pointsCount) * i;
 
             squareLeft[i] = new Vector3(x, y, z);
 
@@ -76,8 +75,8 @@ public class Square : MonoBehaviour {
 
         for (int i = 0; i < (pointsCount / 4); i++)
         {
-            x = Line.Instance.cx - scale + ((scale * 8) / pointsCount) * i;
-            y = Line.Instance.cy - scale;
+            x = Line.Instance.center_x - scale + ((scale * 8) / pointsCount) * i;
+            y = Line.Instance.center_y - scale;
 
             squareBottom[i] = new Vector3(x, y, z);
 

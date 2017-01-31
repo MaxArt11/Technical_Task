@@ -16,7 +16,6 @@ public class wedge : MonoBehaviour
         if (triangleCompare.Instance.winner)
         {
             Timer.Instance.secondsTimer = 2;
-            Score.Instance.score++;
         }
     }
 
@@ -41,9 +40,9 @@ public class wedge : MonoBehaviour
 
         ModelPointList = new List<Vector3>();
 
-        float scale = (Line.Instance.ex + Line.Instance.ey)/2;
-        float line_x = Line.Instance.cx;
-        float line_y = Line.Instance.cy;
+        float scale = (Line.Instance.extents_x + Line.Instance.extents_y)/2;
+        float line_x = Line.Instance.center_x;
+        float line_y = Line.Instance.center_y;
 
 
         for (int i = 0; i < (pointCount / 2); i++)

@@ -24,7 +24,7 @@ public class Check8 : MonoBehaviour {
 			lr7.useWorldSpace = true;
 
 			for (int i = 0; i < Circe.segments + 1; i++) {
-				points7 [i] = new Vector3 ((-0.006f) * i + Line.Instance.cx, (0.006f) * i + Line.Instance.cy, 0f);
+				points7 [i] = new Vector3 ((-0.006f) * i + Line.Instance.center_x, (0.006f) * i + Line.Instance.center_y, 0f);
 
 				comparePoints7.Add (points7 [i]);
 

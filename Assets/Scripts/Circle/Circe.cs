@@ -13,7 +13,6 @@ public class Circe : MonoBehaviour {
 
 	void Start() {
 		Instance = this;
-        Score.Instance.score++;
 	}
 
 	public void Draw ()
@@ -24,8 +23,7 @@ public class Circe : MonoBehaviour {
 		line.useWorldSpace = true;
 		line.SetWidth (0.05f, 0.05f);
 		line.SetColors (Color.blue, Color.blue);
-		xradius = Line.Instance.ex;
-		yradius = Line.Instance.ex;
+		xradius = Line.Instance.extents_x;
 
 		CreatePoints ();
 
@@ -42,8 +40,8 @@ public class Circe : MonoBehaviour {
 		ModelPointList = new List<Vector3> ();
 		for (int i = 0; i < (segments + 1); i++)
 		{
-			x = Mathf.Sin (Mathf.Deg2Rad * angle) * xradius + Line.Instance.cx;
-			y = Mathf.Cos (Mathf.Deg2Rad * angle) * yradius + Line.Instance.cy;
+			x = Mathf.Sin (Mathf.Deg2Rad * angle) * xradius + Line.Instance.center_x;
+			y = Mathf.Cos (Mathf.Deg2Rad * angle) * xradius + Line.Instance.center_y;
 
 			ModelPoints[i] = new Vector3 (x, y, z);
 
